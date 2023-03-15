@@ -1,0 +1,49 @@
+.admin-header {
+  position: fixed;
+  width: calc(100% - 220px);
+  top: 0;
+  left: 220px;
+  z-index: 9;
+  background: #fff;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-sizing: border-box;
+  align-items: center;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+
+  &__title {
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  &__info {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    display: flex;
+    align-items: center;
+
+    &__user {
+      display: flex;
+      padding-left: 15px;
+      margin-left: 15px;
+      align-items: center;
+
+      &__name {
+        margin-right: 8px;
+
+        span {
+          &:nth-child(1) {
+            padding-right: 15px;
+          }
+
+          &:nth-child(2) {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

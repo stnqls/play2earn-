@@ -1,0 +1,130 @@
+.withdraw {
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  &__contents {
+    width: 100%;
+    padding: 35px 0 98px;
+    margin: 0 auto;
+    &__title {
+      position: relative;
+      max-width: 360px;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin: 0 auto;
+      font-size: 25px;
+      color: #333;
+      font-weight: 900;
+    }
+    &__form {
+      background-color: #fbb03b;
+      margin-top: 35px;
+      width: 100%;
+      height: 320px;
+      margin-bottom: 110px;
+      position: relative;
+    }
+    &__btn {
+      display: block;
+      border: none;
+      cursor: pointer;
+      min-width: 210px;
+      height: 41px;
+      font-size: 17px;
+      color: #fff;
+      background-color: #4c250b;
+      border-radius: 6px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+      margin: 0 auto;
+    }
+  }
+  &__close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 6px;
+    right: 5px;
+  }
+}
+
+.currency-withdraw-form {
+  background-color: #fff;
+  min-width: 360px;
+  border-radius: 16px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 17px;
+
+  &__point {
+    font-size: 15px;
+    color: #333;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    & span {
+      display: inline-block;
+      margin-left: 7px;
+      font-size: 17px;
+      color: #000;
+      font-weight: 900;
+    }
+  }
+
+  &__input {
+    &__title {
+      font-size: 16px;
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
+    &__name {
+      font-size: 15px;
+      width: 170px;
+      height: 25px;
+      padding: 3px 6px;
+      border: 1px solid #cfd8dc;
+      margin-bottom: 18px;
+    }
+  }
+  &__bank {
+    display: flex;
+    &__name {
+      padding: 3px 8px;
+      background-color: #cfd8dc;
+      margin-right: 27px;
+      border-radius: 3px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+      font-size: 15px;
+      font-weight: 700;
+    }
+    &__number {
+      font-size: 15px;
+      width: calc(100% - 57px);
+      border: 1px solid #cfd8dc;
+      padding: 3px 6px;
+    }
+  }
+  &__output {
+    margin-top: 24px;
+    &__title {
+      font-size: 15px;
+      font-weight: 900;
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__subtitle {
+      font-size: 13px;
+      color: red;
+    }
+    &__money {
+      font-size: 15px;
+      width: 170px;
+      height: 25px;
+      padding: 3px 6px;
+      border: 1px solid #cfd8dc;
+    }
+  }
+}

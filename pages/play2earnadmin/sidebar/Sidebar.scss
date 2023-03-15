@@ -1,0 +1,81 @@
+.sidebar {
+  position: fixed;
+  height: 100%;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  background-color: #603813;
+  z-index: 10;
+  width: auto;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__list {
+    &__top {
+      color: #fff;
+      padding: 8px 16px 0;
+      box-sizing: border-box;
+      font-size: 19px;
+      font-weight: 900;
+      height: 80px;
+
+      span {
+        cursor: pointer;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 190px;
+        height: 1px;
+        margin-top: 24px;
+      }
+    }
+
+    &__item {
+      color: #fff;
+      padding: 24px 16px 0;
+      box-sizing: border-box;
+      font-size: 16px;
+      &__title {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+      }
+
+      &__sublist {
+        width: 192px;
+        padding: 8px 0;
+        background-color: #fff;
+        border-radius: 8px;
+        color: #333;
+        margin-top: 16px;
+        transform: scaleY(0.1);
+        visibility: hidden;
+        transition: all 0.5s ease;
+        &__subitem {
+          font-size: 14px;
+          font-weight: 700;
+          padding: 8px 16px;
+          box-sizing: border-box;
+          border-radius: 10px;
+          margin: 0 8px;
+          transition: all 0.5s ease;
+          &:hover {
+            background-color: rgba(96, 56, 19, 0.3);
+            cursor: pointer;
+            transform: scale(1.1);
+            color: #000;
+          }
+        }
+      }
+      .show {
+        visibility: visible;
+        transform: scaleY(1);
+      }
+    }
+  }
+}

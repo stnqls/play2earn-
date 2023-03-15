@@ -1,0 +1,148 @@
+.admin-currency-withdrawal {
+  &__header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__menu {
+      display: flex;
+      &__item {
+        font-weight: 700;
+        color: #4c250b;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+      &__item--none {
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+    &__search {
+      width: 300px;
+      padding: 6px 12px;
+      margin-right: 30px;
+      border: none;
+      background-color: rgba(251, 176, 59, 0.5);
+    }
+  }
+  &__body {
+    width: 100%;
+    min-height: 550px;
+    height: auto;
+    position: relative;
+    & .pagination {
+      position: absolute;
+      bottom: -30px;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      width: 100%;
+      & li {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & a {
+          color: #4c250b;
+          font-size: 17px;
+          font-weight: 900;
+        }
+      }
+      & .active {
+        width: 30px;
+        height: 30px;
+        background-color: #4c250b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & a {
+          color: #fff;
+          font-size: 17px;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
+
+.admin-currency-withdrawal-table {
+  width: 100%;
+  border-collapse: collapse;
+  &__thead {
+    text-align: center;
+    font-weight: 700;
+    background-color: rgb(251, 176, 59);
+    & > tr {
+      & > td {
+        padding: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &__tbody {
+    &__tr {
+      text-align: center;
+      height: 40px;
+      &:hover {
+        background-color: rgba(251, 176, 59, 0.5);
+        cursor: pointer;
+      }
+      & > td {
+        padding: 10px 30px;
+        vertical-align: middle;
+      }
+    }
+    &__detail {
+      background-color: rgba(251, 176, 59, 0.2);
+      &:hover {
+        background-color: rgba(251, 176, 59, 0.2);
+        cursor: default;
+      }
+      & > td {
+        text-align: left;
+        height: 100px;
+        padding: 10px 30px;
+      }
+      &__btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__approval {
+          width: 100px;
+          height: 40px;
+          border: none;
+          background-color: rgb(52, 127, 240);
+          border-radius: 3px;
+          font-size: 17px;
+          color: #fff;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+        &__deny {
+          width: 100px;
+          height: 40px;
+          border: none;
+          background-color: rgb(240, 52, 52);
+          border-radius: 3px;
+          font-size: 17px;
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__none {
+      padding: 30px;
+      text-align: center;
+      font-size: 20px;
+    }
+    &__detail--none {
+      display: none;
+    }
+  }
+  &__date {
+    width: 35%;
+  }
+}

@@ -1,0 +1,102 @@
+.pointList {
+  min-width: 360px;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  &__content {
+    padding: 35px 15px;
+    width: 360px;
+    margin: 0 auto;
+    height: 800px;
+
+    &__title {
+      font-size: 25px;
+      color: #333;
+      font-weight: 900;
+      position: relative;
+      padding: 0 25px;
+    }
+    &__close {
+      position: absolute;
+      width: 27px;
+      height: 27px;
+      top: 6px;
+      right: 5px;
+    }
+    &__list {
+      height: 100%;
+      min-height: 630px;
+      list-style: none;
+      margin-top: 30px;
+      &__item {
+        background-color: #fbb03b;
+        border-radius: 8px;
+        width: 100%;
+        padding: 17px;
+        color: #4c250b;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        margin-bottom: 10px;
+        &__point {
+          color: #fff;
+          font-size: 17px;
+          font-weight: 700;
+          margin-right: 10px;
+          float: left;
+        }
+        &__date {
+          font-size: 13px;
+          text-align: right;
+        }
+        &:nth-child(2n) {
+          background-color: #f7931e;
+        }
+      }
+
+      &__item--none {
+        background-color: #fff;
+        width: 100%;
+        padding: 17px;
+        color: #333;
+        border-radius: 8px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        font-size: 15px;
+        margin-top: 20px;
+      }
+    }
+  }
+  .pagination {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    & li {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & a {
+        color: #4c250b;
+        font-size: 17px;
+        font-weight: 900;
+      }
+    }
+    & .active {
+      width: 30px;
+      height: 30px;
+      background-color: #4c250b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & a {
+        color: #fff;
+        font-size: 17px;
+        font-weight: 900;
+      }
+    }
+  }
+}

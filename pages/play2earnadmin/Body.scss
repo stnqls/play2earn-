@@ -1,0 +1,16 @@
+ul {
+  list-style: none;
+}
+
+.body {
+  width: 100%;
+  display: flex;
+
+  &__content {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+    padding-top: 110px;
+    box-sizing: border-box;
+    position: relative;
+  }
+}

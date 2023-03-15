@@ -1,0 +1,38 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "deploy": "next build && next export && firebase deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "@zeit/next-typescript": "^1.1.1",
+    "axios": "^0.26.1",
+    "firebase": "^9.6.10",
+    "next": "^11.1.2",
+    "node-sass": "^7.0.1",
+    "react": "^17.0.2",
+    "react-cookie": "^4.1.1",
+    "react-dom": "^17.0.2",
+    "react-js-pagination": "^3.0.3",
+    "sass": "^1.49.9",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.44.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.42",
+    "@types/react-js-pagination": "^3.0.4",
+    "eslint": "^8.11.0",
+    "eslint-config-next": "^12.1.0",
+    "typescript": "^4.6.2"
+  },
+  "description": ""
+}
